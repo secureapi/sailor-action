@@ -1,6 +1,5 @@
 #!/bin/sh -l
 
-echo "Hello $1"
 cat > .secureapi.yml << EOL
 url: "$1"
 username: "$2"
