@@ -1,0 +1,20 @@
+name: 'Sailor-action: security testing for you WEB API'
+description: 'SecureAPI.dev testing tool, sailor, wrapped in GH action'
+inputs:
+  url:
+    description: 'URL you want to test'
+    required: true
+    default: 'https://apistaging.secureapi.dev'
+  username:
+    description: 'Your SecureAPI username'
+    required: true
+  access_key:
+    description: 'Your SecureAPI access key'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+  - ${{ inputs.url }}
+  - ${{ inputs.username }}
+  - ${{ inputs.access_key }}
