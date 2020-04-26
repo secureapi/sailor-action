@@ -5,5 +5,6 @@ USER root
 RUN apk add --no-cache ca-certificates
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod a+x /entrypoint.sh
+ENV SAILOR_GH_ACTION yes
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
