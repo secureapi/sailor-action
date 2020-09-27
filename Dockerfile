@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM secureapi/sailor:v0.0.8-pre
+FROM secureapi/sailor:v1.0.0
 USER root
 # Copies your code file from your action repository to the filesystem path `/` of the container
 RUN apk add --no-cache ca-certificates

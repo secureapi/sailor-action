@@ -1,5 +1,5 @@
 # Sailor SecureAPI action
-Action which makes running [SecureAPI](https://secureapi.dev) security tests even easier.
+Action which makes running [SecureAPI](https://app.secureapi.dev) security tests even easier.
 
 
 ## Example config
